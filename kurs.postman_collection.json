@@ -1,0 +1,364 @@
+{
+	"info": {
+		"_postman_id": "d08b1c69-cc93-4c1c-a6c8-24cd2cfa7d00",
+		"name": "kurs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21148451"
+	},
+	"item": [
+		{
+			"name": "редактирование аккаунта",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Password\":\"Pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-kirichenko.xn--80ahdri7a.site/api/editaccount/10",
+					"protocol": "http",
+					"host": [
+						"k-kirichenko",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"editaccount",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "регистрация",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"Firstname\": \"Крендель\",\r\n    \"Lastname\": \"Иванов\",\r\n    \"Post\": \"Нотариус\",\r\n    \"Password\": \"password\",\r\n    \"Root\": \"Администратор\",\r\n    \"token\": \"sdasad\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-kirichenko.xn--80ahdri7a.site/api/register",
+					"protocol": "http",
+					"host": [
+						"k-kirichenko",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Аккаунт",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "Jw14EJNdZIEEvTXG45oSNQ4ZhG8T5hk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://k-kirichenko.xn--80ahdri7a.site/api/account",
+					"protocol": "http",
+					"host": [
+						"k-kirichenko",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "вход в аккаунт",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "H9AF5Fp52WRJQqZEVIs8oGKc0wvU8EFP",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ID_user\": \"11\",\r\n    \"Password\": \"password\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-kirichenko.xn--80ahdri7a.site/api/login",
+					"protocol": "http",
+					"host": [
+						"k-kirichenko",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "удаление документа",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-kirichenko.xn--80ahdri7a.site/api/deldoc/13",
+					"protocol": "http",
+					"host": [
+						"k-kirichenko",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"deldoc",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "удаление категории",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://k-kirichenko.xn--80ahdri7a.site/api/delcat/Заявление",
+					"protocol": "http",
+					"host": [
+						"k-kirichenko",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"delcat",
+						"Заявление"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "получение ддокумента",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://k-kirichenko.xn--80ahdri7a.site/api/getdoc/6",
+					"protocol": "http",
+					"host": [
+						"k-kirichenko",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"getdoc",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "создание шаблона",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jIJquoqVrnGM_NBJNfOXqwDFsFQjEsth",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ID_user",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "Category",
+							"value": "Выписка",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"type": "file",
+							"src": "тит.doc"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://k-kirichenko.xn--80ahdri7a.site/api/pattern",
+					"protocol": "http",
+					"host": [
+						"k-kirichenko",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"pattern"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "создание документа",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "jIJquoqVrnGM_NBJNfOXqwDFsFQjEsth",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "ID_user",
+							"value": "11",
+							"type": "text"
+						},
+						{
+							"key": "Category",
+							"value": "Выписка",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"type": "file",
+							"src": []
+						}
+					]
+				},
+				"url": {
+					"raw": "http://k-kirichenko.xn--80ahdri7a.site/api/newdoc",
+					"protocol": "http",
+					"host": [
+						"k-kirichenko",
+						"xn--80ahdri7a",
+						"site"
+					],
+					"path": [
+						"api",
+						"newdoc"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
