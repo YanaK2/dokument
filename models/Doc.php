@@ -11,7 +11,7 @@ use yii\web\UploadedFile;
  * @property int $ID_docs
  * @property int $ID_user
  * @property string $Category
- * @property string $File
+ * @property string $name
  *
  * @property User $user
  */

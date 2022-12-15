@@ -50,18 +50,15 @@ $config = [
     'enableStrictParsing' => true,
     'showScriptName' => false,
     'rules' => [
-       // ['class' => 'yii\rest\UrlRule', 'controller' => 'user'],
-       //['class' => 'yii\rest\UrlRule', 'controller' => 'doc'],
-      //['class' => 'yii\rest\UrlRule', 'controller' => 'pattern'],
-        'POST register' => 'user/create', //есть
-        'POST login' => 'user/login',//есть
-        'POST pattern' => 'pattern/create',//есть
-        'POST newdoc' => 'doc/create',//есть
-        'GET getdoc/<ID_doc>' => 'doc/getdoc',//есть
-        'DELETE deldoc/<ID_doc>' => 'doc/delete',//есть
-        'DELETE delcat/<Category>' => 'doc/delcat',//есть
-        'GET account' => 'user/account',//есть
-        'PUT editaccount/<ID_user>' => 'user/editaccount', //есть и оно работает
+        'POST register' => 'user/create', //регистрация
+        'POST login' => 'user/login',//вход  в аккаут
+        'POST pattern' => 'pattern/create',//загрузка шаблона
+        'POST newdoc' => 'doc/create',//загрузка документа
+        'GET getdoc/<ID_doc>' => 'doc/getdoc',//получение документа и данных о нем
+        'DELETE deldoc/<ID_doc>' => 'doc/delete',//удаление документа
+        'DELETE delcat/<Category>' => 'doc/delcat',//удаление категории
+        'GET account' => 'user/account',//личный кабинет
+        'PUT editaccount/<ID_user>' => 'user/editaccount', //редактирование аккаунта
     ],
 
 
